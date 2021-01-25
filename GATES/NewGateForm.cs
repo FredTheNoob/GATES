@@ -92,6 +92,8 @@ namespace GATES
             // Brugeren kan se gate typen der er tilføjet, samt de input bits den er forbundet til, samt ens output bit
             lstView.Items.Add($"{cmbGateType.SelectedItem} ➜ {cmbInputbit.SelectedItem} ＆ {cmbInputBit2.SelectedItem} ➜ {cmbOutputbit.SelectedItem}");
 
+            Gate.updateAllGates();
+
             // Vi gemmer denne form, for at gå tilbage til vores main form
             this.Hide();
         }
